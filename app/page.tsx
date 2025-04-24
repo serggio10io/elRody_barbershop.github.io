@@ -246,6 +246,7 @@ export default function Home() {
 
           <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
             <p>© {new Date().getFullYear()} elRody Barbería. Todos los derechos reservados.</p>
+            <p className="mt-2 text-sm">Created for Serggio with ❤️</p>
           </div>
         </div>
       </footer>
