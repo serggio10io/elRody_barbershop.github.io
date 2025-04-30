@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import { motion } from "framer-motion"
-import type { HairStyle } from "@/lib/types"
+import { useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import type { HairStyle } from "@/lib/types";
 
 interface HairStyleCardProps {
-  hairStyle: HairStyle
+  hairStyle: HairStyle;
 }
 
 export default function HairStyleCard({ hairStyle }: HairStyleCardProps) {
-  const [isHovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <motion.div
@@ -34,14 +34,21 @@ export default function HairStyleCard({ hairStyle }: HairStyleCardProps) {
         <p className="text-gray-300 mb-4">{hairStyle.description}</p>
 
         <div className="flex justify-between items-center">
-          <span className="text-amber-400 font-bold text-xl">${hairStyle.price}</span>
-          <motion.button
+          <span className="text-amber-400 font-bold text-xl">
+            ${hairStyle.price}
+          </span>
+          <motion.a
+            href={`https://wa.me/+5363202625?text=Hola!%20Quiero%20hacerme%20el%20corte:%20${encodeURIComponent(
+              hairStyle.description
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white text-black px-4 py-2 rounded-full font-medium hover:bg-amber-400 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Reservar
-          </motion.button>
+          </motion.a>
         </div>
       </div>
 
@@ -50,5 +57,5 @@ export default function HairStyleCard({ hairStyle }: HairStyleCardProps) {
         ${hairStyle.price}
       </div>
     </motion.div>
-  )
+  );
 }
