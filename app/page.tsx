@@ -88,10 +88,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-bold text-white mb-6"
           >
-            Barbería con Estilo{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-red-500 to-amber-300">
-              Cubano
-            </span>
+            Barbería con Estilo <span className="gradient-text">Cubano</span>
           </motion.h1>
 
           <motion.p
@@ -109,29 +106,22 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white rounded-full px-8 py-6 text-lg"
+            <a
+              href="#agendar"
+              className="gradient-button inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full px-8 py-6 text-lg font-medium text-white transition-all hover:scale-105 hover:shadow-lg"
             >
-              <a href="#agendar">Agendar Cita</a>
-            </Button>
+              Agendar Cita
+            </a>
 
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white rounded-full px-8 py-6 text-lg"
+            <a
+              href="https://goo.gl/maps/qQaVJKYN5ksRmybNA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gradient-button inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full px-8 py-6 text-lg font-medium text-white transition-all hover:scale-105 hover:shadow-lg"
             >
-              <a
-                href="https://goo.gl/maps/qQaVJKYN5ksRmybNA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                <MapPin className="h-5 w-5" />
-                Nuestra Localización
-              </a>
-            </Button>
+              <MapPin className="h-5 w-5" />
+              Nuestra Localización
+            </a>
           </motion.div>
         </div>
 

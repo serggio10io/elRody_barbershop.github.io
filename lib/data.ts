@@ -1,4 +1,4 @@
-import type { HairStyle } from "./types";
+import type { HairStyle } from "./types"
 
 export const hairStyles: HairStyle[] = [
   {
@@ -11,8 +11,7 @@ export const hairStyles: HairStyle[] = [
   {
     id: "pompadour",
     name: "Fade medio",
-    description:
-      "Estilo elevado en la parte superior con lados cortos y elegantes.",
+    description: "Estilo elevado en la parte superior con lados cortos y elegantes.",
     price: 300,
     image: "/images/pompadour.webp",
   },
@@ -33,8 +32,7 @@ export const hairStyles: HairStyle[] = [
   {
     id: "textured",
     name: "Dominicano con diseño ",
-    description:
-      "Estilo moderno con textura y diseño en la parte lateral, se le agrego 100 a su valor por el diseño",
+    description: "Estilo moderno con textura y diseño en la parte lateral, se le agrego 100 a su valor por el diseño",
     price: 400,
     image: "/images/textured.webp",
   },
@@ -48,16 +46,14 @@ export const hairStyles: HairStyle[] = [
   {
     id: "peinados",
     name: "Peinado Moderno",
-    description:
-      "Estilo texturizado con volumen y definición para un look actual.",
+    description: "Estilo texturizado con volumen y definición para un look actual.",
     price: 2500,
     image: "/images/peinados.webp",
   },
   {
     id: "barba",
     name: "Dibujos",
-    description:
-      "Dibujos que realzan el estilo, raya sencilla el costo aumenta a medida que se dificulta el diseño",
+    description: "Dibujos que realzan el estilo, raya sencilla el costo aumenta a medida que se dificulta el diseño",
     price: 50,
     image: "/images/barba.webp",
   },
@@ -72,9 +68,8 @@ export const hairStyles: HairStyle[] = [
   {
     id: "iluminacion",
     name: "Iluminacion masculina",
-    description:
-      "Iluminacion masculina para un look fresco y moderno, el precio puede llegar a los 2300",
+    description: "Iluminacion masculina para un look fresco y moderno, el precio puede llegar a los 2300",
     price: 1500,
     image: "/images/iluminaciones.webp",
   },
-];
+]

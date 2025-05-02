@@ -86,13 +86,10 @@ export default function AppointmentForm() {
     setIsSubmitting(true)
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-
       // Format data for WhatsApp message
       const formattedDate = format(data.date, "PPP", { locale: es })
-      const message = `Hola, soy ${data.name}. Quiero agendar una cita para un ${data.service} el ${formattedDate} a las ${data.time}.`
-      const whatsappUrl = `https://wa.me/+5312345678?text=${encodeURIComponent(message)}`
+      const message = `Hola, soy ${data.name}. Quiero agendar una cita para un ${data.service} el ${formattedDate} a las ${data.time}. Mi número de contacto es ${data.phone} y mi correo es ${data.email}. ${data.notes ? `Notas adicionales: ${data.notes}` : ""}`
+      const whatsappUrl = `https://wa.me/+5363202625?text=${encodeURIComponent(message)}`
 
       // Open WhatsApp in a new tab
       window.open(whatsappUrl, "_blank")
@@ -301,7 +298,7 @@ export default function AppointmentForm() {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-amber-500 to-red-500 hover:from-amber-600 hover:to-red-600 text-white py-6 text-lg"
+            className="w-full gradient-button px-8 py-6 text-lg border-none"
           >
             {isSubmitting ? "Agendando..." : "Agendar Cita"}
           </Button>

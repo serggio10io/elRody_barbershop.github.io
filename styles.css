@@ -1,10 +1,6 @@
 /* ...existing code... */
 .gradient-text {
-  background: linear-gradient(
-    to right,
-    #ff7e5f,
-    #feb47b
-  ); /* Ajusta los colores del gradiente */
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Ajusta los colores del gradiente */
   -webkit-background-clip: text; /* Necesario para dispositivos móviles */
   -webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el gradiente */
   background-clip: text; /* Compatibilidad adicional */

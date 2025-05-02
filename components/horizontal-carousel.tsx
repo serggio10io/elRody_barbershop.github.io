@@ -48,15 +48,11 @@ export default function HorizontalCarousel() {
                     <span className="text-4xl sm:text-6xl md:text-8xl font-bold text-white">CORTE</span>
                     <Scissors className="h-8 w-8 sm:h-12 sm:w-12 md:h-16 md:w-16 mx-2 sm:mx-4 text-amber-400" />
                     <span className="text-4xl sm:text-6xl md:text-8xl font-bold">
-                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-red-500">
-                        CON
-                      </span>
+                      <span className="gradient-text">CON</span>
                     </span>
                     <span className="text-4xl sm:text-6xl md:text-8xl font-bold text-white mx-2 sm:mx-4">ESTILO</span>
                     <span className="text-4xl sm:text-6xl md:text-8xl font-bold">
-                      <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-amber-400">
-                        CUBA
-                      </span>
+                      <span className="gradient-text">CUBA</span>
                     </span>
                   </div>
                 ))}
